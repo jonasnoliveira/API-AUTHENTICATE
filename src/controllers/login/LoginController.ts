@@ -1,8 +1,8 @@
 import { Request, Response } from "express"
 import jwt from 'jsonwebtoken'
 import bcrypt from "bcrypt"
-import { userRepository } from "../repositories/userRepository"
-import { BadRequestError, UnauthorizedError } from "../helpers/api-errors"
+import { userRepository } from "../../repositories/userRepository"
+import { BadRequestError, UnauthorizedError } from "../../helpers/api-errors"
 
 export class LoginController {
     async login(req: Request, res: Response) {
